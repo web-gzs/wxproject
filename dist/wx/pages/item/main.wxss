@@ -1,0 +1,54 @@
+@import "../../common/vendor.wxss";
+
+.container.data-v-74ca3734 {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+.meta.data-v-74ca3734 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50rpx 40rpx;
+}
+.poster.data-v-74ca3734 {
+  width: 100%;
+  height: 800rpx;
+  margin: 20rpx;
+}
+.title.data-v-74ca3734 {
+  font-style: 42rpx;
+  color: #222;
+}
+.info.data-v-74ca3734 {
+  font-size: 18rpx;
+  color: #444;
+  margin-top: 20rpx;
+  width: 80%;
+}
+.summary.data-v-74ca3734 {
+  width: 80%;
+  margin: 30rpx auto;
+}
+.label.data-v-74ca3734 {
+  display: block;
+  font-size: 30rpx;
+  margin-bottom: 30rpx;
+}
+.content.data-v-74ca3734 {
+  color: #555;
+  font-size: 20rpx;
+  padding: 2em;
+}
+.background.data-v-74ca3734 {
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1000;
+  opacity: .1;
+}

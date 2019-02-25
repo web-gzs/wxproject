@@ -1,0 +1,20 @@
+<template name="73079b62">
+  <view class="_div data-v-62b8a0ee container">
+    <view class="_div data-v-62b8a0ee slide">
+      <swiper class="_swiper data-v-62b8a0ee swp" indicator-dots="{{true}}" autoplay="{{true}}" interval="{{1000}}" duration="{{100}}" circular="{{true}}">
+        <swiper-item wx:key="item.id" key="{{item.id}}" wx:for="{{banner.content}}" wx:for-index="index" wx:for-item="item" class="_swiper-item data-v-62b8a0ee">
+          <navigator url="{{'../item/main?id='+item.id}}" class="_navigator data-v-62b8a0ee">
+            <image class="_image data-v-62b8a0ee nav-img" src="{{item.image}}" mode="aspectFill"></image>
+          </navigator>
+        </swiper-item>
+      </swiper>
+    </view>
+    <view class="_div data-v-62b8a0ee board" scroll-y="{{true}}">
+      <navigator wx:key="item.key" key="{{item.key}}" url="{{'../list/main?key='+item.key+'&title='+item.title}}" wx:for="{{list}}" wx:for-index="index" wx:for-item="item" class="_navigator data-v-62b8a0ee">
+        <view class="_div data-v-62b8a0ee board-item"><label class="_span data-v-62b8a0ee board-item-title">{{item.title}}</label>
+          <image class="_img data-v-62b8a0ee arrow" src="/static/images/arrowright.png"></image>
+        </view>
+      </navigator>
+    </view>
+  </view>
+</template>

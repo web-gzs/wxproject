@@ -1,0 +1,6 @@
+{
+  "backgroundColor": "#ccc",
+  "backgroundTextStyle": "light",
+  "enablePullDownRefresh": true,
+  "navigationBarTitleText": "搜索"
+}

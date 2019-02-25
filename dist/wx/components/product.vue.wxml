@@ -1,0 +1,10 @@
+<template name="7ca9612e">
+  <view class="_div data-v-7946eb9b item">
+    <image class="_img data-v-7946eb9b poster" src="{{item.image}}"></image>
+    <view class="_div data-v-7946eb9b meta"><label class="_span data-v-7946eb9b title">{{item.title}}</label> <label class="_span data-v-7946eb9b sub-title">{{item.original_title}} ({{item.year}})</label>
+      <view class="_div data-v-7946eb9b artists">导演<block> {{item.directors}} </block>
+      </view>
+    </view>
+    <view class="_div data-v-7946eb9b"><label class="_span data-v-7946eb9b rating">{{item.average}}</label></view>
+  </view>
+</template>

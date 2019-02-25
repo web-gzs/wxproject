@@ -1,0 +1,11 @@
+<template name="50755fb4">
+  <view class="_div data-v-74ca3734 container">
+    <image class="_img data-v-74ca3734 background" src="{{detail.images && detail.images.large}}" mode="aspectFill"></image>
+    <view class="_div data-v-74ca3734">
+      <view class="_div data-v-74ca3734 meta">
+        <image class="_img data-v-74ca3734 poster" src="{{detail.images && detail.images.large}}" mode="aspectFit"></image> <label class="_span data-v-74ca3734 title">{{detail.title}}({{detail.year}})</label> <label class="_span data-v-74ca3734 info">评分：{{detail.rating && detail.rating.average}}</label> <label class="_span data-v-74ca3734 info">导演：<block wx:key="item.id" key="{{item.id}}" wx:for="{{detail.directors}}" wx:for-index="index" wx:for-item="item"> {{item.name}} </block></label> <label class="_span data-v-74ca3734 info">主演：<block wx:key="item.id" key="{{item.id}}" wx:for="{{detail.casts}}" wx:for-index="index" wx:for-item="item"> {{item.name}} </block></label>
+      </view>
+      <view class="_div data-v-74ca3734 summary"><label class="_span data-v-74ca3734 label">摘要：</label> <label class="_span data-v-74ca3734 content">{{detail.summary}}</label></view>
+    </view>
+  </view>
+</template>

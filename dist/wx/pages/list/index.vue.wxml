@@ -1,0 +1,7 @@
+<import src="/components/product.vue.wxml" /><template name="8895581e">
+  <view class="_div data-v-acea2f9e container">
+    <view class="_div data-v-acea2f9e list">
+      <navigator wx:key="item.id" key="{{item.id}}" url="{{'../item/main?id='+item.id}}" wx:for="{{list}}" wx:for-index="index" wx:for-item="item" class="_navigator data-v-acea2f9e"><template data="{{...$root[$kk+'0_'+index], $root}}" is="7ca9612e"></template></navigator>
+    </view>
+  </view>
+</template>

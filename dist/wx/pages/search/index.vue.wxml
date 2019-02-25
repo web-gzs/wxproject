@@ -1,0 +1,19 @@
+<import src="/components/product.vue.wxml" /><template name="36edf18a">
+  <view class="_div data-v-1c9bbabb container">
+    <view class="_div data-v-1c9bbabb search"><input class="_input data-v-1c9bbabb search-input" placeholder="{{subtitle}}" focus bindblur="handleProxy" data-eventid="{{'0'}}" data-comkey="{{$k}}" /></view>
+    <view class="_div data-v-1c9bbabb list">
+      <view class="_div data-v-1c9bbabb tips" wx:if="{{loading}}">
+        <view class="_div data-v-1c9bbabb">
+          <image class="_img data-v-1c9bbabb tips-img" src="/static/images/loading.gif" mode="aspectFill"></image> <label class="_span data-v-1c9bbabb">刷新中...</label>
+        </view>
+      </view>
+      <navigator wx:key="item.id" key="{{item.id}}" url="{{'../item/main?id=' + item.id}}" wx:for="{{list}}" wx:for-index="index" wx:for-item="item" class="_navigator data-v-1c9bbabb"><template data="{{...$root[$kk+'0_'+index], $root}}" is="7ca9612e"></template></navigator>
+      <view class="_div data-v-1c9bbabb tips" wx:if="{{list.length>0}}">
+        <view wx:if="{{hasMore}}" class="_div data-v-1c9bbabb">
+          <image class="_img data-v-1c9bbabb tips-img" src="{{'/static/images/loading.gif'}}" mode="aspectFill"></image> <label class="_span data-v-1c9bbabb span">玩命加载中...</label>
+        </view>
+        <view wx:else class="_div data-v-1c9bbabb"><label class="_span data-v-1c9bbabb">没有更多内容了</label></view>
+      </view>
+    </view>
+  </view>
+</template>
